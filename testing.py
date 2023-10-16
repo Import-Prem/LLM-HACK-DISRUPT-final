@@ -1,7 +1,8 @@
-import streamlit as st 
+import openai 
+openai.api_key = "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"
 
 
-video_file = open("08aa745b-52bb-4915-82e8-99107be230b3/combined_video.mp4", 'rb')
-video_bytes = video_file.read()
+audio_file= open("383428ff-a9c6-4c60-be84-96604f831e09/combined_video.mp4", "rb")
+transcript = openai.Audio.transcribe("whisper-1", audio_file)
 
-st.video(video_bytes)
+print(transcript)
