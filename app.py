@@ -10,11 +10,8 @@ __status__ = "Production"
 import uuid, shutil  
 # from logger import logger
 from celery import Celery
-
 from utilities import * 
 from prompt_template import * 
-
-
 import streamlit as st 
 
 # Set the page title
