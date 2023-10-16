@@ -45,6 +45,7 @@ def complete_pipeline_function(topic, goal, unique_id):
 
     ## Get the imge descriptions
     image_prompts, texts = fetch_imagedescription_and_script(prompt_template)
+    print(texts)
 
     ## logger 
     # logger.info(f"Got the image_prompts and texts:\nImage_prompts:\n{image_prompts}\ntexts:\n{texts}")
